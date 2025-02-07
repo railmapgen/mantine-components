@@ -1,6 +1,6 @@
 {
     "homepage": "https://railmapgen.github.io/mantine-components",
-    "name": "mantine-components",
+    "name": "@railmapgen/mantine-components",
     "repository": "github:railmapgen/mantine-components",
     "bugs": {
         "url": "https://github.com/railmapgen/mantine-components/issues"
