@@ -1,7 +1,4 @@
-/* Uncomment below for AgGrid styling */
-/*@import "ag-grid-community/dist/styles/ag-grid.css";*/
-/*@import "ag-grid-community/dist/styles/ag-theme-alpine.css";*/
-/*@import "ag-grid-community/dist/styles/ag-theme-alpine-dark.css";*/
+@import '@mantine/core/styles.css';
 
 :root {
     background-color: #FFFFFF;
@@ -28,9 +25,13 @@ body {
 }
 
 div#root {
+    /*display: flex;*/
     height: 100%;
     width: 100%;
     background: inherit;
+    /*flex-direction: column;*/
+    /*overflow: hidden;*/
+    /*position: absolute;*/
 }
 
 * {

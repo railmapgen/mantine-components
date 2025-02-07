@@ -7,6 +7,7 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import react from 'eslint-plugin-react';
 import prettier from 'eslint-plugin-prettier';
+import storybook from 'eslint-plugin-storybook';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,11 +36,12 @@ export default tseslint.config(
         plugins: { prettier },
         rules: {
             'prettier/prettier': [
-                'warn',
+                'error',
                 {
                     endOfLine: 'auto',
                 },
             ],
         },
-    }
+    },
+    ...compat.config(storybook.configs.recommended)
 );
