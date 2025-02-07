@@ -1,1 +1,0 @@
-# Mantine Components

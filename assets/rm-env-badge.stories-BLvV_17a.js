@@ -1,0 +1,7 @@
+import{j as s}from"./jsx-runtime-CLpGMVip.js";import{f as B,u as j,a as S,B as k,c as _,g as M,R as t,b as o}from"./rm-env-badge-pNIaOlCZ.js";import"./index-B-SYruCi.js";var g={root:"m_6d731127"};const h={gap:"md",align:"stretch",justify:"flex-start"},D=_((v,{gap:r,align:a,justify:n})=>({root:{"--stack-gap":M(r),"--stack-align":a,"--stack-justify":n}})),c=B((v,r)=>{const a=j("Stack",h,v),{classNames:n,className:l,style:p,styles:u,unstyled:R,vars:E,align:N,justify:P,gap:V,variant:f,...x}=a,y=S({name:"Stack",props:a,classes:g,className:l,style:p,classNames:n,styles:u,unstyled:R,vars:E,varsResolver:D});return s.jsx(k,{ref:r,...y("root"),variant:f,...x})});c.classes=g;c.displayName="@mantine/core/Stack";const b={title:"RMEnvBadge",component:t},e=()=>s.jsxs(c,{children:[s.jsx(t,{env:o.DEV,ver:"1.2.3"}),s.jsx(t,{env:o.UAT,ver:"1.2.3"}),s.jsx(t,{env:o.PRD,ver:"1.2.3"})]});e.__docgenInfo={description:"",methods:[],displayName:"Basic"};var m,i,d;e.parameters={...e.parameters,docs:{...(m=e.parameters)==null?void 0:m.docs,source:{originalSource:`() => {
+  return <Stack>
+            <RMEnvBadge env={RmgEnv.DEV} ver="1.2.3" />
+            <RMEnvBadge env={RmgEnv.UAT} ver="1.2.3" />
+            <RMEnvBadge env={RmgEnv.PRD} ver="1.2.3" />
+        </Stack>;
+}`,...(d=(i=e.parameters)==null?void 0:i.docs)==null?void 0:d.source}}};const I=["Basic"];export{e as Basic,I as __namedExportsOrder,b as default};

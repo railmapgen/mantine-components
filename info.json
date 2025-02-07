@@ -1,6 +1,6 @@
 {
-    "component": "mantine-components",
-    "version": "9.9.9",
-    "environment": "DEV",
-    "instance": "localhost"
+  "component": "mantine-components",
+  "version": "0.1.1",
+  "environment": "PRD",
+  "instance": "GitHub"
 }
