@@ -8,7 +8,7 @@
     "license": "GPL-3.0-only",
     "peerDependencies": {
         "@mantine/core": ">=7",
-        "@railmapgen/rmg-runtime": ">=10",
+        "@railmapgen/rmg-runtime": ">=10.4",
         "postcss": ">=8",
         "react": ">=18",
         "react-icons": "*"
@@ -20,7 +20,7 @@
         "@eslint/eslintrc": "^3.2.0",
         "@eslint/js": "^9.20.0",
         "@mantine/core": "^7.16.3",
-        "@railmapgen/rmg-runtime": "^10.3.2",
+        "@railmapgen/rmg-runtime": "^10.4.0",
         "@storybook/addon-essentials": "^8.5.3",
         "@storybook/blocks": "^8.5.3",
         "@storybook/react": "^8.5.3",
