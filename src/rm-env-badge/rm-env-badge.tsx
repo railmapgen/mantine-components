@@ -14,7 +14,7 @@ type RMEnvBadgeProps = {
 
 export const RMEnvBadge = ({ env, ver, ...others }: RMEnvBadgeProps) => {
     return (
-        <Badge variant="light" color={ENV_COLOUR_MAP[env]} radius="sm" title={`${env}: ${ver}`} {...others}>
+        <Badge variant="light" color={ENV_COLOUR_MAP[env]} radius="sm" title={`${env}: ${ver}`} mx={5} {...others}>
             {env === RmgEnv.PRD ? ver : env}
         </Badge>
     );

@@ -1,4 +1,6 @@
-import { TextEncoder } from 'util';
+import { setupTest } from './utils';
+
+setupTest();
 
 const originalFetch = global.fetch;
 global.fetch = vi.fn().mockImplementation((...args: any[]) => {
@@ -11,16 +13,4 @@ global.fetch = vi.fn().mockImplementation((...args: any[]) => {
     } else {
         return originalFetch(args[0], args[1]);
     }
-});
-
-global.TextEncoder = TextEncoder;
-global.window.matchMedia = query => ({
-    matches: false,
-    media: query,
-    onchange: null,
-    addListener: vi.fn(), // deprecated
-    removeListener: vi.fn(), // deprecated
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-    dispatchEvent: vi.fn(),
 });

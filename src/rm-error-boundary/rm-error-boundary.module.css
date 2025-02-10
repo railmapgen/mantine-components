@@ -1,0 +1,28 @@
+.root {
+    height: 100vh;
+    /*padding-bottom: 0;*/
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.body {
+    overflow: hidden;
+}
+
+.message {
+    overflow-y: auto;
+}
+
+.message > p:not(:first-of-type), .message > details {
+    margin-top: 8px;
+}
+
+.message details {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    font-family: monospace;
+    font-size: 14px;
+}
