@@ -64,16 +64,15 @@
     },
     "version": "0.1.7",
     "type": "module",
-    "main": "./dist/index.cjs",
+    "main": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/index.mjs",
-            "require": "./dist/index.cjs"
+            "import": "./dist/index.mjs"
         },
+        "./styles.css": "./dist/index.css",
         "./utils": {
-            "import": "./dist/utils/index.mjs",
-            "require": "./dist/utils/index.cjs"
+            "import": "./dist/utils/index.mjs"
         }
     },
     "files": [
