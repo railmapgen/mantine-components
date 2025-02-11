@@ -1,0 +1,18 @@
+.root {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    height: 40px;
+    padding: 0 8px;
+}
+
+.header h1 {
+    font-size: 20px;
+}
+
