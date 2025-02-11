@@ -14,7 +14,7 @@ interface ErrorDetailProps extends AlertProps {
 export default function ErrorDetail(props: ErrorDetailProps) {
     const { error, errorInfo, allowReset, classNames, ...others } = props;
 
-    const [isDialogOpen, setIsDialogOpen] = useState(true);
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
 
     const getResetAppLink = (label: string) => {
         return (
