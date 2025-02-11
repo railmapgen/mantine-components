@@ -11,7 +11,7 @@ export const Basic = () => {
     return (
         <Group>
             <RMThemeButton bg="red" fg="white" />
-            <RMThemeButton bg="green" fg="black">
+            <RMThemeButton bg="green" fg="black" title="Delete">
                 <MdClose />
             </RMThemeButton>
         </Group>

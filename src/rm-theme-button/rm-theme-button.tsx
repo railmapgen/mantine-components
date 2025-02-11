@@ -1,11 +1,11 @@
 import classes from './rm-theme-button.module.css';
-import { ColorSwatch, ColorSwatchProps } from '@mantine/core';
+import { ColorSwatch, ColorSwatchProps, PolymorphicComponentProps } from '@mantine/core';
 import clsx from 'clsx';
 
 type RMThemeButtonProps = {
     bg: string;
     fg: string;
-} & Omit<ColorSwatchProps, 'color'>;
+} & Omit<PolymorphicComponentProps<'button', ColorSwatchProps>, 'color'>;
 
 export const RMThemeButton = ({ bg, fg, className, children, ...others }: RMThemeButtonProps) => {
     return (
