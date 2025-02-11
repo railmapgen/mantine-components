@@ -17,12 +17,12 @@
 }
 
 .message > p:not(:first-of-type), .message > details {
-    margin-top: 8px;
+    margin-top: var(--mantine-spacing-xs);
 }
 
 .message details {
     white-space: pre-wrap;
     overflow-wrap: break-word;
     font-family: monospace;
-    font-size: 14px;
+    font-size: var(--mantine-font-size-sm);
 }

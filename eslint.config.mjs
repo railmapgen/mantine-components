@@ -15,6 +15,7 @@ const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname });
 
 export default tseslint.config(
+    { ignores: ['postcss.config.cjs'] },
     eslint.configs.recommended,
     {
         files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],

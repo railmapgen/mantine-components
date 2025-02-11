@@ -7,7 +7,7 @@
 
 .header {
     align-items: flex-end;
-    padding: 4px 8px;
+    padding: calc(var(--mantine-spacing-xs) * 0.5) var(--mantine-spacing-xs);
 }
 
 .body {
@@ -17,5 +17,5 @@
 }
 
 .footer {
-    padding: 8px;
+    padding: var(--mantine-spacing-xs);
 }
