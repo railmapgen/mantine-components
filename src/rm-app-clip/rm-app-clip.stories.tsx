@@ -1,5 +1,5 @@
 import { RMAppClip } from './rm-app-clip';
-import { Box, Button, Group, Stack, Text } from '@mantine/core';
+import { Button, Code, Group, Stack, Text } from '@mantine/core';
 import { useState } from 'react';
 
 export default {
@@ -12,7 +12,11 @@ export const Basic = () => {
     const [fullscreen, setFullscreen] = useState(false);
 
     return (
-        <Box p="sm">
+        <Stack p="sm">
+            <Text>
+                This component wraps a <Code>Modal</Code> component. To change the size, please refer to the Mantine
+                Modal&apos;s documentation.
+            </Text>
             <Group>
                 <Button
                     onClick={() => {
@@ -38,6 +42,6 @@ export const Basic = () => {
                     <Button onClick={() => setOpened(false)}>Close</Button>
                 </Stack>
             </RMAppClip>
-        </Box>
+        </Stack>
     );
 };
