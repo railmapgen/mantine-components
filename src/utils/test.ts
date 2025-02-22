@@ -18,4 +18,6 @@ export const setupTest = () => {
         removeEventListener: vi.fn(),
         dispatchEvent: vi.fn(),
     });
+
+    Element.prototype.scrollIntoView = () => {};
 };

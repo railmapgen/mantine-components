@@ -1,3 +1,4 @@
+export * from './rm-app-clip';
 export * from './rm-env-badge';
 export * from './rm-error-boundary';
 export * from './rm-labelled-segmented-control';
