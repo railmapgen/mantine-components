@@ -1,5 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
 import ResizeObserverPolyfill from 'resize-observer-polyfill';
 import { TextEncoder } from 'node:util';
 
