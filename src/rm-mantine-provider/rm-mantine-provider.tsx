@@ -1,9 +1,17 @@
+import classes from './mantine-override.module.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { PropsWithChildren, useEffect } from 'react';
-import { createTheme, MantineProvider, useMantineColorScheme } from '@mantine/core';
+import { createTheme, MantineProvider, Modal, useMantineColorScheme } from '@mantine/core';
 
 const theme = createTheme({
     primaryColor: 'cyan',
+    components: {
+        Modal: Modal.extend({
+            classNames: {
+                title: classes['modal-title'],
+            },
+        }),
+    },
 });
 
 const colourMode = rmgRuntime.getColourMode();
