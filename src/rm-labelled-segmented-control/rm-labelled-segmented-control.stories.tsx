@@ -12,7 +12,7 @@ export const Basic = () => {
             size="sm"
             data={[
                 { label: 'Black', value: '#000' },
-                { label: 'White', value: '#000' },
+                { label: 'White', value: '#fff' },
             ]}
         />
     );
