@@ -1,6 +1,6 @@
-import classes from './rm-labelled-segmented-control.module.css';
-import { Flex, SegmentedControl, SegmentedControlProps, Text } from '@mantine/core';
+import { SegmentedControl, SegmentedControlProps } from '@mantine/core';
 import { useId } from 'react';
+import { RMLabel } from '../rm-label';
 
 type RMLabelledSegmentedControlProps = {
     label: string;
@@ -10,11 +10,8 @@ export const RMLabelledSegmentedControl = ({ label, size, ...others }: RMLabelle
     const labelId = useId();
 
     return (
-        <Flex direction="column">
-            <Text id={labelId} component="div" size={size} className={classes.label}>
-                {label}
-            </Text>
+        <RMLabel id={labelId} size={size} label={label}>
             <SegmentedControl size={size} aria-labelledby={labelId} {...others} />
-        </Flex>
+        </RMLabel>
     );
 };
