@@ -6,4 +6,5 @@ export * from './rm-labelled-segmented-control';
 export * from './rm-labelled-slider';
 export * from './rm-layout';
 export * from './rm-mantine-provider';
+export * from './rm-side-panel';
 export * from './rm-theme-button';
