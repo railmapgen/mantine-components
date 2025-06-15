@@ -32,7 +32,7 @@ export const RMSidePanel = ({
         <div
             ref={ref}
             className={clsx(classes.root, opened && classes.show, overlay && classes.overlay, className)}
-            style={{ ['--side-panel-width' as any]: width, ...style }}
+            style={{ ['--side-panel-width' as any]: width ? `${width}px` : undefined, ...style }}
             {...others}
         >
             <div className={classes.wrapper}>{children}</div>
