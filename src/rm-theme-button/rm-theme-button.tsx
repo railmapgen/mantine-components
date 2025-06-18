@@ -7,13 +7,13 @@ type RMThemeButtonProps = {
     fg: string;
 } & Omit<PolymorphicComponentProps<'button', ColorSwatchProps>, 'color'>;
 
-export const RMThemeButton = ({ bg, fg, className, children, ...others }: RMThemeButtonProps) => {
+export const RMThemeButton = ({ bg, fg, className, style, children, ...others }: RMThemeButtonProps) => {
     return (
         <ColorSwatch
             component="button"
             color={bg}
             className={clsx(classes.root, className)}
-            style={{ color: fg }}
+            style={{ color: fg, ...style }}
             {...others}
         >
             {children ?? 'Aa'}
