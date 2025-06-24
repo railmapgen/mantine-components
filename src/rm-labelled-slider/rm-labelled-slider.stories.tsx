@@ -12,7 +12,6 @@ export const Basic = () => {
         <Stack>
             <RMLabelledSlider
                 fieldLabel="Canvas scale with button controls"
-                size="sm"
                 label={label => `${label}x`}
                 min={0.1}
                 max={2}
@@ -20,7 +19,6 @@ export const Basic = () => {
             />
             <RMLabelledSlider
                 fieldLabel="Canvas scale with button controls"
-                size="sm"
                 label={label => `${label}x`}
                 min={0.1}
                 max={2}

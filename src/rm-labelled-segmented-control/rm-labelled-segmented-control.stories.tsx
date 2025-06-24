@@ -9,7 +9,6 @@ export const Basic = () => {
     return (
         <RMLabelledSegmentedControl
             label="Foreground colour"
-            size="sm"
             data={[
                 { label: 'Black', value: '#000' },
                 { label: 'White', value: '#fff' },

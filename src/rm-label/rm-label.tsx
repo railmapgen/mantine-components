@@ -11,7 +11,7 @@ type RMLabelProps = Omit<HTMLProps<HTMLDivElement>, 'size' | 'span'> & {
 /**
  * `id` field is required for the `RMLabel` component, and it should be used as the `aria-labelledby` attribute of the control element, for accessibility reasons.
  */
-export const RMLabel = ({ id, size, label, className, children, ...others }: RMLabelProps) => {
+export const RMLabel = ({ id, size = 'sm', label, className, children, ...others }: RMLabelProps) => {
     return (
         <Flex direction="column">
             <Text id={id} component="div" size={size} className={clsx(classes.label, className)} {...others}>
