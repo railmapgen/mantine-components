@@ -3,6 +3,7 @@
 }
 
 .root {
+    position: relative;
     flex-shrink: 0;
     width: 0;
     height: 100%;
@@ -32,4 +33,15 @@
     flex-direction: column;
     height: 100%;
     width: var(--side-panel-width);
+}
+
+.close-btn {
+    position: absolute;
+    top: 4px;
+    right: var(--mantine-spacing-xs);
+}
+
+.title {
+    font-weight: 500;
+    margin: 4px var(--mantine-spacing-xs);
 }

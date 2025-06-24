@@ -1,8 +1,8 @@
 import { RMSidePanel } from './rm-side-panel';
 import { RMPage, RMPageBody, RMPageHeader } from '../rm-layout';
-import { ActionIcon, Button, Divider, Group, Text } from '@mantine/core';
+import { ActionIcon, Button, Group, Text } from '@mantine/core';
 import { useState } from 'react';
-import { MdOutlineClose, MdOutlineLayers, MdOutlineLayersClear, MdOutlinePushPin } from 'react-icons/md';
+import { MdOutlineLayers, MdOutlineLayersClear } from 'react-icons/md';
 
 export default {
     title: 'RMSidePanel',
@@ -11,7 +11,6 @@ export default {
 
 export const Basic = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isPinned, setIsPinned] = useState(false);
     const [isOverlay, setIsOverlay] = useState(false);
 
     return (
@@ -32,20 +31,18 @@ export const Basic = () => {
                     ornare mi. Curabitur sagittis lectus diam, quis lobortis urna imperdiet et. Pellentesque feugiat
                     nibh eu cursus accumsan.
                 </Text>
-                <RMSidePanel opened={isOpen} onClose={() => setIsOpen(false)} pinned={isPinned} overlay={isOverlay}>
+                <RMSidePanel
+                    opened={isOpen}
+                    onClose={() => setIsOpen(false)}
+                    overlay={isOverlay}
+                    title="My Side Panel"
+                    withCloseButton
+                >
                     <Group gap="xs" px="xs" py={4}>
-                        <Text fw={500}>Side Panel</Text>
-                        <ActionIcon variant="default" ml="auto" onClick={() => setIsPinned(true)}>
-                            <MdOutlinePushPin />
-                        </ActionIcon>
                         <ActionIcon variant="default" onClick={() => setIsOverlay(prevState => !prevState)}>
                             {isOverlay ? <MdOutlineLayersClear /> : <MdOutlineLayers />}
                         </ActionIcon>
-                        <ActionIcon variant="default" onClick={() => setIsOpen(false)}>
-                            <MdOutlineClose />
-                        </ActionIcon>
                     </Group>
-                    <Divider />
                 </RMSidePanel>
             </RMPageBody>
         </RMPage>
