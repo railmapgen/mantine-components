@@ -30,14 +30,16 @@ export const RMSidePanel = ({
             style={{ ['--side-panel-width' as any]: width ? `${width}px` : undefined, ...style }}
             {...others}
         >
-            {withCloseButton && <CloseButton onClick={onClose} className={classes['close-btn']} />}
-            {title && (
-                <>
-                    <Text className={classes.title}>{title}</Text>
-                    <Divider />
-                </>
-            )}
-            <div className={classes.wrapper}>{children}</div>
+            <div className={classes.wrapper}>
+                {withCloseButton && <CloseButton onClick={onClose} className={classes['close-btn']} />}
+                {title && (
+                    <div>
+                        <Text className={classes.title}>{title}</Text>
+                        <Divider />
+                    </div>
+                )}
+                {children}
+            </div>
         </div>
     );
 };
