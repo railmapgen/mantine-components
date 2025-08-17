@@ -1,1 +1,0 @@
-import{j as i}from"./jsx-runtime-D_zvdyIk.js";import{r as o}from"./index-D4lIrffr.js";import{i as a}from"./factory-b8CrjD1V.js";function f(e){const r=o.forwardRef(e);return r.withProps=n=>{const t=o.forwardRef((p,s)=>i.jsx(r,{...n,...p,ref:s}));return t.extend=r.extend,t.displayName=`WithProps(${r.displayName})`,t},r.extend=a,r}export{f as p};
