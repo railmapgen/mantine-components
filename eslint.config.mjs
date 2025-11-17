@@ -26,12 +26,16 @@ export default tseslint.config(
     },
     {
         files: ['**/*.{js,jsx,ts,tsx}'],
-        extends: [...compat.config(react.configs.recommended), ...compat.config(react.configs['jsx-runtime'])],
+        ...react.configs.flat.recommended,
         settings: {
             react: {
                 version: 'detect',
             },
         },
+    },
+    {
+        files: ['**/*.{js,jsx,ts,tsx}'],
+        ...react.configs.flat['jsx-runtime'],
     },
     {
         plugins: { prettier },
