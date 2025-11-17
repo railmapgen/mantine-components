@@ -10,14 +10,10 @@ export default defineConfig({
         globals: true,
         environment: 'jsdom',
         setupFiles: './src/setupTests.ts',
-        server: {
-            deps: {
-                fallbackCJS: true,
-            },
-        },
         watch: false,
         coverage: {
             provider: 'v8',
+            skipFull: true,
             exclude: [...coverageConfigDefaults.exclude, '**/*.stories.tsx'],
             include: ['src'],
         },
