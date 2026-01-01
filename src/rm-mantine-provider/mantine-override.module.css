@@ -1,3 +1,7 @@
 .modal-title {
     font-weight: 700;
 }
+
+.input-wrapper__label {
+    white-space: nowrap;
+}

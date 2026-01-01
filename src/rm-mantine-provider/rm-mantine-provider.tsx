@@ -1,7 +1,16 @@
 import classes from './mantine-override.module.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { PropsWithChildren, useEffect } from 'react';
-import { Checkbox, createTheme, MantineProvider, Modal, Slider, Switch, useMantineColorScheme } from '@mantine/core';
+import {
+    Checkbox,
+    createTheme,
+    InputWrapper,
+    MantineProvider,
+    Modal,
+    Slider,
+    Switch,
+    useMantineColorScheme,
+} from '@mantine/core';
 
 const theme = createTheme({
     primaryColor: 'cyan',
@@ -9,6 +18,11 @@ const theme = createTheme({
         Checkbox: Checkbox.extend({
             defaultProps: {
                 labelPosition: 'left',
+            },
+        }),
+        InputWrapper: InputWrapper.extend({
+            classNames: {
+                label: classes['input-wrapper__label'],
             },
         }),
         Modal: Modal.extend({
