@@ -1,5 +1,5 @@
 import { RMWindow, RMWindowHeader } from './rm-window';
-import { Box, Button, Divider, Group, TextInput, Title } from '@mantine/core';
+import { Box, Button, Divider, Group, Switch, TextInput, Title } from '@mantine/core';
 import { RMEnvBadge } from '../rm-env-badge';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { RMPage, RMPageBody, RMPageFooter, RMPageHeader } from './rm-page';
@@ -12,6 +12,7 @@ export default {
 
 export const Basic = () => {
     const [highlightSection, setHighlightSection] = useState<string>();
+    const [isAppClip, setIsAppClip] = useState(false);
 
     const getStyle = (section: string) => {
         return highlightSection === section ? { border: '1px dashed' } : undefined;
@@ -19,7 +20,7 @@ export const Basic = () => {
 
     return (
         <Box w={500} h={500} style={{ border: '2px solid darkred' }}>
-            <RMWindow style={getStyle('window')}>
+            <RMWindow isAppClip={isAppClip} style={getStyle('window')}>
                 <RMWindowHeader style={getStyle('window-header')}>
                     <Title>App Title</Title>
                     <RMEnvBadge env={rmgRuntime.getEnv()} ver={rmgRuntime.getAppVersion()} />
@@ -27,6 +28,12 @@ export const Basic = () => {
                 <RMPage style={getStyle('page')}>
                     <RMPageHeader style={getStyle('page-header')}>
                         <TextInput label="Filter" />
+                        <Switch
+                            label="is AppClip?"
+                            checked={isAppClip}
+                            onChange={({ currentTarget: { checked } }) => setIsAppClip(checked)}
+                            ml="xs"
+                        />
                     </RMPageHeader>
                     <RMPageBody direction="column" m="xs" style={{ overflowY: 'auto', ...getStyle('page-body') }}>
                         <Group gap="xs">

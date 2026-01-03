@@ -21,4 +21,8 @@
     padding-inline: var(--mantine-spacing-xs);
     padding-top: var(--mantine-spacing-xs);
     padding-bottom: max(env(safe-area-inset-bottom), var(--mantine-spacing-xs));
+
+    :global(.rm-window--is-app-clip) & {
+        padding-bottom: var(--mantine-spacing-xs);
+    }
 }

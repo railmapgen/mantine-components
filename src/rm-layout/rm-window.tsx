@@ -2,8 +2,17 @@ import classes from './rm-window.module.css';
 import { Flex, FlexProps } from '@mantine/core';
 import clsx from 'clsx';
 
-export const RMWindow = ({ className, ...others }: FlexProps) => {
-    return <Flex className={clsx('rm-window', classes.root, className)} {...others} />;
+type RMWindowProps = {
+    isAppClip?: boolean; // ignore safe-area-inset env vars
+} & FlexProps;
+
+export const RMWindow = ({ isAppClip, className, ...others }: RMWindowProps) => {
+    return (
+        <Flex
+            className={clsx('rm-window', classes.root, isAppClip && 'rm-window--is-app-clip', className)}
+            {...others}
+        />
+    );
 };
 
 type RMWindowHeaderProps = {
