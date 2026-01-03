@@ -8,8 +8,9 @@
 .header {
     align-items: center;
     transition: 0.3s ease-in-out;
-    height: 40px;
-    padding: 0 var(--mantine-spacing-xs);
+    padding-inline: var(--mantine-spacing-xs);
+    padding-top: env(safe-area-inset-top);
+    height: calc(env(safe-area-inset-top) + 40px);
 }
 
 .header h1 {
