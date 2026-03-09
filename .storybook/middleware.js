@@ -1,6 +1,6 @@
-const infoJson = require('../info.json');
+import infoJson from '../info.json' with { type: 'json' };
 
-module.exports = app => {
+export default app => {
     app.get('/iframe.html/info.json', (req, res) => {
         res.end(JSON.stringify(infoJson));
     });

@@ -1,5 +1,5 @@
 import { Modal as ModalComponent } from '@mantine/core';
-import { StoryObj } from '@storybook/react';
+import { StoryObj } from '@storybook/react-vite';
 
 export default {
     title: 'RMMantineProvider/Modal',

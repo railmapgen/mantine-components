@@ -1,5 +1,5 @@
 import { Box, TextInput as TextInputComponent } from '@mantine/core';
-import { StoryObj } from '@storybook/react';
+import { StoryObj } from '@storybook/react-vite';
 import { RMMantineProvider } from '../rm-mantine-provider';
 import { JSX } from 'react';
 

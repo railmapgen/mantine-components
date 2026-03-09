@@ -1,5 +1,5 @@
 import { Checkbox as CheckboxComponent } from '@mantine/core';
-import { StoryObj } from '@storybook/react';
+import { StoryObj } from '@storybook/react-vite';
 
 export default {
     title: 'RMMantineProvider/Checkbox',

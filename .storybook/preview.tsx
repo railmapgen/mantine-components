@@ -1,5 +1,5 @@
 import '../src/index.css';
-import type { Preview } from '@storybook/react';
+import type { Preview } from '@storybook/react-vite';
 import { RMMantineProvider } from '../src';
 import ColourSchemeWrapper from './ColourSchemeWrapper';
 

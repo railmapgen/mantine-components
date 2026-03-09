@@ -1,5 +1,5 @@
 import { Box, Switch as SwitchComponent } from '@mantine/core';
-import { StoryObj } from '@storybook/react';
+import { StoryObj } from '@storybook/react-vite';
 import { JSX } from 'react';
 import { RMMantineProvider } from '../rm-mantine-provider';
 
