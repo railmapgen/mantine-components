@@ -1,7 +1,11 @@
-.modal-title {
+.modal__title {
     font-weight: 700;
 }
 
 .input-wrapper__label {
     white-space: nowrap;
+}
+
+.switch__label-wrapper {
+    flex: 1;
 }

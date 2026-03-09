@@ -27,7 +27,7 @@ const theme = createTheme({
         }),
         Modal: Modal.extend({
             classNames: {
-                title: classes['modal-title'],
+                title: classes['modal__title'],
             },
         }),
         Slider: Slider.extend({
@@ -39,6 +39,9 @@ const theme = createTheme({
             defaultProps: {
                 labelPosition: 'left',
                 withThumbIndicator: false,
+            },
+            classNames: {
+                labelWrapper: classes['switch__label-wrapper'],
             },
         }),
     },
