@@ -26,6 +26,9 @@ const theme = createTheme({
             },
         }),
         Modal: Modal.extend({
+            defaultProps: {
+                centered: true,
+            },
             classNames: {
                 title: classes['modal__title'],
             },
