@@ -1,5 +1,0 @@
-import{h as n,j as t,i as s}from"./iframe-BD5WVMZF.js";import"./preload-helper-PPVm8Dsz.js";class o extends n.Component{constructor(e){super(e),this.state={counter:0},this.handleClick=this.handleClick.bind(this)}handleClick(){this.setState(({counter:e})=>({counter:e+1}))}render(){if(this.state.counter===5)throw new Error("I crashed!");return t.jsxs("h1",{onClick:this.handleClick,children:["Click me: ",this.state.counter]})}}o.__docgenInfo={description:"",methods:[{name:"handleClick",docblock:null,modifiers:[],params:[],returns:null}],displayName:"BuggyCounter"};const d={title:"RMErrorBoundary",component:s},r=()=>t.jsx(s,{allowReset:!0,children:t.jsx(o,{})});r.__docgenInfo={description:"",methods:[],displayName:"Basic"};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`() => {
-  return <RMErrorBoundary allowReset>
-            <BuggyCounter />
-        </RMErrorBoundary>;
-}`,...r.parameters?.docs?.source}}};const l=["Basic"];export{r as Basic,l as __namedExportsOrder,d as default};
