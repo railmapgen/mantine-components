@@ -10,11 +10,12 @@
     box-shadow: var(--mantine-shadow-md);
     transition: 0.3s ease-in-out;
     overflow: hidden;
-    background: var(--mantine-color-white);
+    background: var(--mantine-color-body);
 
+    /*
     @mixin dark {
         background: var(--mantine-color-dark-6);
-    }
+    }*/
 
     &.show {
         width: var(--side-panel-width);
