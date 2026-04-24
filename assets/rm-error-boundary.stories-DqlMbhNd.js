@@ -1,0 +1,5 @@
+import{a as e,n as t}from"./chunk-DnJy8xQt.js";import{T as n,tt as r,w as i,wt as a}from"./iframe-C0bvZa1t.js";var o,s,c,l=t((()=>{o=e(a(),1),s=r(),c=class extends o.Component{constructor(e){super(e),this.state={counter:0},this.handleClick=this.handleClick.bind(this)}handleClick(){this.setState(({counter:e})=>({counter:e+1}))}render(){if(this.state.counter===5)throw Error(`I crashed!`);return(0,s.jsxs)(`h1`,{onClick:this.handleClick,children:[`Click me: `,this.state.counter]})}},c.__docgenInfo={description:``,methods:[{name:`handleClick`,docblock:null,modifiers:[],params:[],returns:null}],displayName:`BuggyCounter`}})),u,d,f,p;t((()=>{n(),l(),u=r(),d={title:`RMErrorBoundary`,component:i},f=()=>(0,u.jsx)(i,{allowReset:!0,children:(0,u.jsx)(c,{})}),f.__docgenInfo={description:``,methods:[],displayName:`Basic`},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`() => {
+  return <RMErrorBoundary allowReset>
+            <BuggyCounter />
+        </RMErrorBoundary>;
+}`,...f.parameters?.docs?.source}}},p=[`Basic`]}))();export{f as Basic,p as __namedExportsOrder,d as default};
